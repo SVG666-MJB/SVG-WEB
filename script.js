@@ -9,7 +9,7 @@ document.querySelectorAll('.button').forEach((button) => {
   });
 });
 
-// Custom Cursor Effect (Optional, add if needed)
+// Custom Cursor Effect (Optional, if needed)
 const cursor = document.querySelector(".custom-cursor");
 
 if (cursor) {
