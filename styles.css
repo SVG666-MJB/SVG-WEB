@@ -38,8 +38,8 @@ body {
 }
 
 .profile-frame {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid #fff;
@@ -62,29 +62,23 @@ h1 {
   color: #ccc;
 }
 
-/* Icon Options */
-.icon-options {
+/* Small Icons Section */
+.small-icons {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin: 15px 0;
+  margin-top: 10px;
 }
 
 .small-icon {
-  font-size: 24px;
+  font-size: 20px;
   color: #fff;
-  background: #1a1a1a;
-  border-radius: 50%;
-  padding: 10px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
+  transition: transform 0.3s, color 0.3s;
 }
 
 .small-icon:hover {
-  background: #444;
-  transform: scale(1.1);
+  transform: scale(1.2);
+  color: #ff4500;
 }
 
 /* Links Section */
@@ -92,30 +86,50 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: flex-start; /* Align buttons to the left */
+  padding-left: 20px;
 }
 
 .button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: #fff;
-  color: #000;
+  background: #1a1a1a;
+  color: #fff;
   text-decoration: none;
   font-size: 16px;
-  padding: 15px;
+  padding: 12px 15px;
   border-radius: 30px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease;
-  font-weight: bold;
+  width: fit-content;
 }
 
-.button img {
-  width: 24px;
-  height: 24px;
+.button i {
   margin-right: 10px;
+  font-size: 20px;
 }
 
 .button:hover {
-  background: #f0f0f0;
+  background: #444;
   transform: scale(1.05);
+}
+
+/* Book Me Button */
+.book-me {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 69, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+.book-me:hover {
+  background: #e63900;
+  transform: scale(1.1);
 }
