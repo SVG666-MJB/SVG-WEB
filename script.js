@@ -9,17 +9,7 @@ document.querySelectorAll('.button').forEach((button) => {
   });
 });
 
-// Custom Cursor Effect (Optional, if needed)
-const cursor = document.querySelector(".custom-cursor");
-
-if (cursor) {
-  document.addEventListener("mousemove", (e) => {
-    cursor.style.left = `${e.pageX}px`;
-    cursor.style.top = `${e.pageY}px`;
-  });
-}
-
-// Scroll to Top Button (Optional, add if required)
+// Scroll to Top Button (Optional)
 const scrollToTopButton = document.getElementById("scroll-to-top");
 
 if (scrollToTopButton) {
@@ -33,5 +23,18 @@ if (scrollToTopButton) {
 
   scrollToTopButton.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
+  });
+}
+
+// Dark Mode Toggle (Optional for future use)
+const toggleButton = document.getElementById("theme-toggle");
+
+if (toggleButton) {
+  toggleButton.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+
+    toggleButton.textContent = document.body.classList.contains("light-mode")
+      ? "Switch to Dark Mode"
+      : "Switch to Light Mode";
   });
 }
