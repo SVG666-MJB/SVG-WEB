@@ -1,62 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DJ SVG</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DJ SVG - Link Style</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
 </head>
 <body>
-  <!-- Background Blur -->
+  <!-- Background (blurred) -->
   <div class="background-blur"></div>
 
-  <!-- Main Content -->
-  <div class="container">
-    <!-- Profile Section -->
-    <div class="profile">
-      <div class="profile-frame">
-        <img src="profile.jpg" alt="DJ SVG" class="profile-pic">
-      </div>
-      <h1>@_svg.27</h1>
-      <p class="tagline">DJ spreading positive vibes 🎶✨</p>
-
-      <!-- Small Icons Section -->
-      <div class="small-icons">
-        <a href="https://soundcloud.com/ilyas-naim-852221500" target="_blank" class="small-icon">
-          <i class="fab fa-soundcloud"></i>
-        </a>
-        <a href="https://www.instagram.com/_svg.27/" target="_blank" class="small-icon">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Top Icons Section -->
+    <div class="top-icons">
+      <a href="https://soundcloud.com/ilyas-naim-852221500" target="_blank" class="icon">
+        <i class="fab fa-soundcloud"></i>
+      </a>
+      <a href="https://www.instagram.com/_svg.27/" target="_blank" class="icon">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
 
-    <!-- Links Section -->
-    <div class="links">
+    <!-- Profile Section -->
+    <div class="profile-section">
+      <img src="profile.jpg" alt="DJ SVG" class="profile-pic"/>
+      <h1 class="username">@_svg.27</h1>
+      <p class="subtitle">DJ spreading positive vibes 🎶✨</p>
+    </div>
+
+    <!-- Link Buttons (Cards) -->
+    <div class="links-container">
       <!-- SoundCloud -->
-      <a href="https://soundcloud.com/ilyas-naim-852221500" class="button" target="_blank">
-        <i class="fab fa-soundcloud"></i>
+      <a href="https://soundcloud.com/ilyas-naim-852221500" target="_blank" class="link-card">
+        <div class="icon-circle">
+          <img src="soundcloud-icon.jpg" alt="SoundCloud" />
+        </div>
         <span>SoundCloud</span>
       </a>
 
       <!-- Instagram -->
-      <a href="https://www.instagram.com/_svg.27/" class="button" target="_blank">
-        <i class="fab fa-instagram"></i>
+      <a href="https://www.instagram.com/_svg.27/" target="_blank" class="link-card">
+        <div class="icon-circle">
+          <img src="instagram-icon.jpg" alt="Instagram" />
+        </div>
         <span>Instagram</span>
       </a>
 
       <!-- Email -->
-      <a href="mailto:ilyassnaim19@gmail.com" class="button" target="_blank">
-        <i class="fas fa-envelope"></i>
+      <a href="mailto:ilyassnaim19@gmail.com" target="_blank" class="link-card">
+        <div class="icon-circle">
+          <i class="fas fa-envelope"></i>
+        </div>
         <span>Email</span>
       </a>
     </div>
   </div>
 
   <!-- Book Me Button -->
-  <a href="mailto:ilyassnaim19@gmail.com" class="book-me">Book Me</a>
+  <a href="mailto:ilyassnaim19@gmail.com" class="book-me-btn">Book Me</a>
 
+  <!-- Optional Scroll to Top Button -->
+  <button id="scroll-to-top">↑</button>
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
